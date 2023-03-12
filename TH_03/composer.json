@@ -1,0 +1,21 @@
+{
+    "name": "cnweb/th03",
+    "description": "Thuc Hanh Composer va Twig Template Engine",
+    "autoload": {
+        "psr-4": {
+            "Cnweb\\Th03\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yenhoa",
+            "email": "yenhoa366@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "twig/twig": "^3.5"
+    }
+    
+}
