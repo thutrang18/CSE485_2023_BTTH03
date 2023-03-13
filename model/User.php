@@ -1,8 +1,10 @@
+
 class User {
   private $id;
   private $name;
   private $email;
   private $password;
+}
 
   public function __construct($name, $email, $password) {
     $this->name = $name;
@@ -26,27 +28,20 @@ class User {
     return $this->password;
   }
 
-  public function save() {
-    // Insert or update the user in the database
-    // ...
-  }
 
   public static function getById($id) {
-    // Retrieve the user with the given ID from the database
-    // ...
+ 
   }
 
   public static function getAll() {
-    // Retrieve all users from the database
-    // ...
+
   }
 
-  public function delete() {
-    // Delete the user from the database
+  public function delete() {}
 
-    public function setName($name) {
-    $this->name = $name;
-  }
+  public function setName($name) {
+    $this->name = $name;}
+  
 
   public function setEmail($email) {
     $this->email = $email;
@@ -59,10 +54,6 @@ class User {
   public function validate() {
     $errors = array();
 
-    // Validate name
-    if (empty($this->name)) {
-      $errors['name'] = 'Name is required';
-    }
 
     // Validate email
     if (empty($this->email)) {
@@ -88,8 +79,8 @@ class User {
       throw new Exception('Validation failed: ' . json_encode($errors));
     }
 
-    // Insert or update the user in the database
-    // ...
+
   }
+  
 
 
